@@ -137,7 +137,7 @@ def findGains(df: pd.DataFrame, config: dict) -> dict:
 
         logger.debug(f"{column_name} -> {column_type}")
 
-        if column_type != "object":
+        if pd.api.types.is_numeric_dtype(column_type):
             df = Preprocess.processContinuousFeatures(algorithm, df, column_name, entropy, config)
 
         classes = df[column_name].value_counts()
@@ -474,7 +474,7 @@ def buildDecisionTree(
         j = j + 1
 
     numericColumn = False
-    if dataset_features[winner_name] != "object":
+    if pd.api.types.is_numeric_dtype(dataset_features[winner_name]):
         numericColumn = True
 
     # restoration
@@ -482,7 +482,7 @@ def buildDecisionTree(
     for i in range(0, columns - 1):
         column_name = df_copy.columns[i]
         column_type = df_copy[column_name].dtypes
-        if column_type != "object" and column_name != winner_name:
+        if pd.api.types.is_numeric_dtype(column_type) and column_name != winner_name:
             df[column_name] = df_copy[column_name]
 
     classes = df[winner_name].value_counts().keys().tolist()
@@ -556,7 +556,7 @@ def buildDecisionTree(
 
     # ---------------------------
     # add else condition in the decision tree
-    if df.Decision.dtypes == "object":  # classification
+    if not pd.api.types.is_numeric_dtype(df.Decision.dtype):  # classification
         # value_counts return count label in 3.8, and Decision label in 3.9
         df_summary = pd.DataFrame(df.Decision.value_counts())
         count_label = df_summary.columns[0]

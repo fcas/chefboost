@@ -96,7 +96,7 @@ def fit(
     nan_values = []
 
     for column in df.columns:
-        if df[column].dtypes != "object":
+        if pd.api.types.is_numeric_dtype(df[column]):
             min_value = df[column].min()
             idx = df[df[column].isna()].index
 
@@ -154,19 +154,18 @@ def fit(
     num_of_columns = df.shape[1]
 
     if algorithm == "Regression":
-        if df["Decision"].dtypes == "object":
+        if not pd.api.types.is_numeric_dtype(df["Decision"]):
             raise ValueError(
                 "Regression trees cannot be applied for nominal target values!"
                 "You can either change the algorithm or data set."
             )
 
-    if (
-        df["Decision"].dtypes != "object"
-    ):  # this must be regression tree even if it is not mentioned in algorithm
+    if pd.api.types.is_numeric_dtype(
+        df["Decision"]):  # this must be regression tree even if it is not mentioned in algorithm
         if algorithm != "Regression":
             logger.warn(
                 f"You set the algorithm to {algorithm} but the Decision column of your"
-                " data set has non-object type."
+                " data set has numeric type."
                 "That's why, the algorithm is set to Regression to handle the data set."
             )
 
@@ -183,7 +182,7 @@ def fit(
         # enableParallelism = False
         for j in range(0, num_of_columns):
             column_name = df.columns[j]
-            if df[column_name].dtypes == "object":
+            if not pd.api.types.is_numeric_dtype(df[column_name]):
                 raise ValueError(
                     "Adaboost must be run on numeric data set for both features and target"
                 )
@@ -229,7 +228,8 @@ def fit(
         )
 
     elif enableGBM == True:
-        if df["Decision"].dtypes == "object":  # transform classification problem to regression
+        if not pd.api.types.is_numeric_dtype(df["Decision"]):
+            # transform classification problem to regression
             trees, alphas = gbm.classifier(
                 df,
                 config,
