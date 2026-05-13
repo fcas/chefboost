@@ -5,16 +5,7 @@
 [![Downloads](https://pepy.tech/badge/chefboost)](https://pepy.tech/project/chefboost)
 [![Stars](https://img.shields.io/github/stars/serengil/chefboost?color=yellow&style=flat&label=%E2%AD%90%20stars)](https://github.com/serengil/chefboost/stargazers)
 [![License](http://img.shields.io/:license-MIT-green.svg?style=flat)](https://github.com/serengil/chefboost/blob/master/LICENSE)
-[![Tests](https://github.com/serengil/chefboost/actions/workflows/tests.yml/badge.svg)](https://github.com/serengil/chefboost/actions/workflows/tests.yml)
 [![DOI](http://img.shields.io/:DOI-10.5281/zenodo.5576203-blue.svg?style=flat)](https://doi.org/10.5281/zenodo.5576203)
-
-[![Blog](https://img.shields.io/:blog-sefiks.com-blue.svg?style=flat&logo=wordpress)](https://sefiks.com)
-[![YouTube](https://img.shields.io/:youtube-@sefiks-red.svg?style=flat&logo=youtube)](https://www.youtube.com/@sefiks?sub_confirmation=1)
-[![Twitter](https://img.shields.io/:follow-@serengil-blue.svg?style=flat&logo=x)](https://twitter.com/intent/user?screen_name=serengil)
-
-[![Patreon](https://img.shields.io/:become-patron-f96854.svg?style=flat&logo=patreon)](https://www.patreon.com/serengil?repo=chefboost)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/serengil?logo=GitHub&color=lightgray)](https://github.com/sponsors/serengil)
-[![Buy Me a Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://buymeacoffee.com/serengil)
 
 <h1>👨‍🍳</h1>
 
