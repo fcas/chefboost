@@ -1,24 +1,19 @@
-# 👨‍🍳 ChefBoost
+# ChefBoost
 
 <div align="center">
 
 [![Downloads](https://pepy.tech/badge/chefboost)](https://pepy.tech/project/chefboost)
-[![Stars](https://img.shields.io/github/stars/serengil/chefboost?color=yellow)](https://github.com/serengil/chefboost)
+[![Stars](https://img.shields.io/github/stars/serengil/chefboost?color=yellow&style=flat&label=%E2%AD%90%20stars)](https://github.com/serengil/chefboost/stargazers)
 [![License](http://img.shields.io/:license-MIT-green.svg?style=flat)](https://github.com/serengil/chefboost/blob/master/LICENSE)
-[![Tests](https://github.com/serengil/chefboost/actions/workflows/tests.yml/badge.svg)](https://github.com/serengil/chefboost/actions/workflows/tests.yml)
 [![DOI](http://img.shields.io/:DOI-10.5281/zenodo.5576203-blue.svg?style=flat)](https://doi.org/10.5281/zenodo.5576203)
 
-[![Blog](https://img.shields.io/:blog-sefiks.com-blue.svg?style=flat&logo=wordpress)](https://sefiks.com)
-[![YouTube](https://img.shields.io/:youtube-@sefiks-red.svg?style=flat&logo=youtube)](https://www.youtube.com/@sefiks?sub_confirmation=1)
-[![Twitter](https://img.shields.io/:follow-@serengil-blue.svg?style=flat&logo=twitter)](https://twitter.com/intent/user?screen_name=serengil)
-[![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dserengil%26type%3Dpatrons&style=flat)](https://www.patreon.com/serengil?repo=chefboost)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/serengil?logo=GitHub&color=lightgray)](https://github.com/sponsors/serengil)
+<h1>👨‍🍳</h1>
 
 </div>
 
 **ChefBoost** is a lightweight decision tree framework for Python **with categorical feature support**. It covers regular decision tree algorithms: [ID3](https://sefiks.com/2017/11/20/a-step-by-step-id3-decision-tree-example/), [C4.5](https://sefiks.com/2018/05/13/a-step-by-step-c4-5-decision-tree-example/), [CART](https://sefiks.com/2018/08/27/a-step-by-step-cart-decision-tree-example/), [CHAID](https://sefiks.com/2020/03/18/a-step-by-step-chaid-decision-tree-example/) and [regression tree](https://sefiks.com/2018/08/28/a-step-by-step-regression-decision-tree-example/); also some advanved techniques: [gradient boosting](https://sefiks.com/2018/10/04/a-step-by-step-gradient-boosting-decision-tree-example/), [random forest](https://sefiks.com/2017/11/19/how-random-forests-can-keep-you-from-decision-tree/) and [adaboost](https://sefiks.com/2018/11/02/a-step-by-step-adaboost-example/). You just need to write **a few lines of code** to build decision trees with Chefboost.
 
-**Installation** - [`Demo`](https://youtu.be/YYF993HTHf8)
+**Installation** [![PyPI](https://img.shields.io/pypi/v/chefboost.svg)](https://pypi.org/project/chefboost/) - [`Demo`](https://youtu.be/YYF993HTHf8)
 
 The easiest way to install ChefBoost framework is to download it from [from PyPI](https://pypi.org/project/chefboost). It's going to install the library itself and its prerequisites as well.
 
@@ -197,11 +192,17 @@ Pull requests are more than welcome! You should run the unit tests and linting l
 
 There are many ways to support a project - starring⭐️ the GitHub repos is just one 🙏
 
-You can also support this work on [Patreon](https://www.patreon.com/serengil?repo=chefboost)
+You can also support this work on [Patreon](https://www.patreon.com/serengil?repo=chefboost), [GitHub Sponsors](https://github.com/sponsors/serengil) or [Buy Me a Coffee](https://buymeacoffee.com/serengil).
 
 <a href="https://www.patreon.com/serengil?repo=chefboost">
-<img src="https://raw.githubusercontent.com/serengil/chefboost/master/icon/patreon.png" width="30%" height="30%">
+<img src="https://raw.githubusercontent.com/serengil/chefboost/master/icon/patreon.png" width="30%">
 </a>
+
+<a href="https://buymeacoffee.com/serengil">
+<img src="https://raw.githubusercontent.com/serengil/chefboost/master/icon/bmc-button.png" width="25%">
+</a>
+
+Also, your company's logo will be shown on README on GitHub if you become sponsor in gold, silver or bronze tiers.
 
 ### Citation
 
